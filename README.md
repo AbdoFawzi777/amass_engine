@@ -1,52 +1,66 @@
 # Amass Engine (`amass_engine`)
 
-A Flutter package for in-depth network mapping, attack surface discovery, and OSINT domain profiling.
+> In-Depth Attack Surface Mapping Engine  
+> **Author & Original Architect:** [Abdallah Fawzi Ali Mahmoud](https://github.com/AbdoFawzi777)  
+> **Part of the RedOps Hub Monorepo Suite**
 
-## ✨ Features
+---
 
-- **Attack Surface Mapping**: Comprehensive domain topology and IP range mapping.
-- **Multi-Source OSINT**: Gathers domain intelligence from diverse public registrants.
-- **Graph Data Modeling**: Structured output for network topology visualization.
+## 📌 Overview
+`amass_engine` is a production-grade, standalone Flutter package engineered for high-performance mobile security auditing. Built with pure Dart and native Flutter MethodChannels/Isolates, it delivers enterprise-level capability directly on Android & iOS devices without relying on external Linux command-line dependencies.
 
-## 🌐 Official App Website & Platform / رابط موقع التطبيق الرسمي
+---
 
-- **Official Website**: [https://redops-hub.web.app/](https://redops-hub.web.app/)
-- **GitHub Monorepo**: [https://github.com/AbdoFawzi777/redops-hub](https://github.com/AbdoFawzi777/redops-hub)
+## 🚀 New Capabilities & Features (v2.0)
+- **Attack Surface Discovery:** Deep OSINT mapping of organization domain infrastructure and child entities.
+- **ASN & IP Block Mapping:** Resolves Autonomous System Numbers (ASNs) and associated IP CIDR ranges.
+- **Graph-Based Infrastructure Tracking:** Tracks relationships between domains, IPs, name servers, and mail exchanges.
+- **Threat Intel Integration:** Integrates with open-source threat feeds for comprehensive intelligence gathering.
 
-## ⚖️ Ownership & Intellectual Property / حقوق الملكية الفكرية
+---
 
-جميع حقوق الملكية والتطوير والبرمجة محفوظة رسمياً للمطور الرئيسي:
-**مهندس البرمجيات / عبد الله فوزي علي محمود**
-(Software Engineer: **Abdallah Fawzi Ali Mahmoud**)
+## 🛠 Usage & Integration
 
-## 🚀 Installation
-
-Add this package to your Flutter project's `pubspec.yaml`:
+Add `amass_engine` to your Flutter `pubspec.yaml`:
 
 ```yaml
 dependencies:
   amass_engine:
-    git:
-      url: https://github.com/AbdoFawzi777/amass_engine.git
-      ref: main
+    path: ../packages/amass_engine
 ```
 
-## 📝 Usage Example
+### Basic Example
 
 ```dart
 import 'package:amass_engine/amass_engine.dart';
 
 void main() async {
-  print('amass_engine initialized successfully.');
+  final engine = AmassEngine();
+  
+  print('Starting Amass Engine audit...');
+  final results = await engine.execute(
+    target: '192.168.1.1',
+  );
+  
+  print('Audit Complete!');
 }
 ```
 
-## 📄 License
+---
 
-Distributed under the MIT License.
+## 🔒 Security & Privacy
+- **Zero Telemetry:** No analytics, tracking, or network calls home.
+- **Encrypted Local Storage:** Integrates seamlessly with RedOps Hub AES-256 local database.
+- **Thread Safety:** All heavy operations execute inside Dart Isolates to maintain 60fps UI rendering.
 
-## 🤝 Contributing & Support
+---
 
-- **Official Website**: [https://redops-hub.web.app/](https://redops-hub.web.app/)
-- **Main Repository**: [https://github.com/AbdoFawzi777/redops-hub](https://github.com/AbdoFawzi777/redops-hub)
-- **Report Issues**: [https://github.com/AbdoFawzi777/amass_engine/issues](https://github.com/AbdoFawzi777/amass_engine/issues)
+## 👤 Author & Copyright
+
+**Abdallah Fawzi Ali Mahmoud**  
+Lead Developer & Security Architect of RedOps Hub  
+- **GitHub:** [@AbdoFawzi777](https://github.com/AbdoFawzi777)  
+- **Telegram:** [@ABdo_FawZi1](https://telegram.me/ABdo_FawZi1)  
+- **Website:** [RedOps Hub Platform](https://redops-hub.web.app)
+
+*Copyright (c) 2026 Abdallah Fawzi Ali Mahmoud. All rights reserved.*
