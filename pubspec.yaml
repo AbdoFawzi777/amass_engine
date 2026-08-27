@@ -1,4 +1,4 @@
-name: amass_engine
+﻿name: amass_engine
 description: Attack surface mapping and external asset discovery engine for Dart and Flutter.
 version: 2.0.0
 repository: https://github.com/AbdoFawzi777/amass_engine
@@ -9,12 +9,14 @@ environment:
   sdk: '>=3.3.0 <4.0.0'
 
 dependencies:
+  crypto: ^3.0.3
   flutter:
     sdk: flutter
   http: ^1.2.1
-  crypto: ^3.0.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   lints: ^3.0.0
+
+
