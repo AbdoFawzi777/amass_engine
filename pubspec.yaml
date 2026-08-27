@@ -1,7 +1,9 @@
 name: amass_engine
-description: Attack surface mapping and external asset discovery engine for Dart & Flutter. Inspired by OWASP Amass.
+description: Attack surface mapping and external asset discovery engine for Dart and Flutter.
 version: 2.0.0
-publish_to: none
+repository: https://github.com/AbdoFawzi777/amass_engine
+homepage: https://github.com/AbdoFawzi777/amass_engine
+issue_tracker: https://github.com/AbdoFawzi777/amass_engine/issues
 
 environment:
   sdk: '>=3.3.0 <4.0.0'
