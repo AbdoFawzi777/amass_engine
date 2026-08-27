@@ -1,6 +1,6 @@
 name: amass_engine
-description: A modular simulation engine for RedOps Hub.
-version: 1.0.0
+description: Attack surface mapping and external asset discovery engine for Dart & Flutter. Inspired by OWASP Amass.
+version: 2.0.0
 publish_to: none
 
 environment:

@@ -1,0 +1,22 @@
+# ==============================================================================
+# Dart & Flutter Package Git Ignore
+# ==============================================================================
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+
+# IDE & Editor
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+Thumbs.db
+
+# Logs & Temporary
+*.log
+__pycache__/
+*.pyc
